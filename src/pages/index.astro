@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	<main>
 		<img src="/icon.png" alt="Tightknit" />
+		<h1>We might be sitting on a goldmine</h1>
 	</main>
 </Layout>
 
@@ -13,11 +14,25 @@ import Layout from '../layouts/Layout.astro';
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 100%;
 		height: 100vh;
+		position: relative;
 	}
 
 	img {
 		width: 200px;
 		height: 200px;
+	}
+
+	h1 {
+		position: absolute;
+top: calc(50% + 100px);
+left: 50%;
+transform: translateX(-50%);
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+		font-size: 28px;
+		font-weight: 800;
+		color: #ededed;
+		text-align: center;
 	}
 </style>
